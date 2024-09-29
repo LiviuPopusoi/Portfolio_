@@ -1,4 +1,4 @@
-/* RESET CSS */
+/* Style global */
 * {
     margin: 0;
     padding: 0;
@@ -6,216 +6,109 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    line-height: 1.8;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond gris clair */
+    color: #333; /* Texte couleur gris foncé */
+    line-height: 1.6;
 }
 
-/* COLORS AND STYLES */
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #f39c12;
-    --background-light: #ecf0f1;
-    --text-color: #333;
-    --white: #ffffff;
-}
-
-/* HEADER */
+/* Style du header */
 header {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 50px 0;
+    background-color: #2c3e50; /* Bleu foncé */
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    position: relative;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 10px;
-    font-weight: 700;
 }
 
 header p {
-    font-size: 1.3em;
-    margin-bottom: 25px;
+    font-size: 1.2em;
 }
 
 nav ul {
     list-style: none;
-    margin-top: 20px;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: var(--white);
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-    padding: 10px 20px;
-    border-radius: 25px;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: var(--accent-color);
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #3498db; /* Bleu clair */
 }
 
-/* GENERAL SECTIONS */
+/* Container pour la mise en page générale */
 .container {
     width: 80%;
-    max-width: 1200px;
     margin: auto;
-    padding: 40px 0;
+    overflow: hidden;
+    padding: 20px;
 }
 
+/* Style des sections */
 section {
-    padding: 60px 0;
+    padding: 40px 0;
+    background-color: #e9ecef; /* Couleur de fond gris clair pour chaque section */
 }
 
+/* Titres de sections */
 h2 {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5em;
-    color: var(--primary-color);
-}
-
-/* ABOUT SECTION */
-section#about {
-    background-color: var(--background-light);
-    padding: 50px 0;
-}
-
-section#about p {
-    font-size: 1.2em;
-    line-height: 1.8;
     margin-bottom: 20px;
-    text-align: center;
-    color: var(--text-color);
+    font-size: 2em;
+    color: #2c3e50; /* Bleu foncé */
 }
 
-section#about .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ul {
+    list-style: square;
+    margin-left: 20px;
+    color: #555; /* Gris moyen */
 }
 
-/* SKILLS SECTION */
-section#skills {
-    background-color: var(--white);
-}
-
-section#skills ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-left: 40px;
-}
-
-section#skills ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-    color: var(--primary-color);
-}
-
-section#skills ul li:before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: var(--accent-color);
-    font-size: 1.5em;
-}
-
-/* PROJECTS SECTION */
-section#projects {
-    background-color: var(--background-light);
-}
-
+/* Style des projets */
 .project {
-    background-color: var(--white);
-    margin-bottom: 40px;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
 }
 
 .project h3 {
-    font-size: 1.8em;
+    color: #3498db; /* Bleu clair */
     margin-bottom: 10px;
-    color: var(--primary-color);
 }
 
-.project p {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-    color: var(--text-color);
-}
-
-/* CONTACT SECTION */
-section#contact {
-    background-color: var(--white);
-    text-align: center;
-}
-
-section#contact h2 {
-    margin-bottom: 30px;
-}
-
-section#contact p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
-
-section#contact a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-section#contact a:hover {
-    color: var(--accent-color);
-}
-
-/* FOOTER */
+/* Style du footer */
 footer {
-    background-color: var(--primary-color);
-    color: var(--white);
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    background-color: #2c3e50; /* Bleu foncé */
+    color: #fff;
+    margin-top: 40px;
 }
 
 footer p {
-    font-size: 1.1em;
+    margin: 0;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 768px) {
-    section#skills ul {
-        grid-template-columns: 1fr;
-    }
+/* Liens de contact */
+a {
+    color: #3498db; /* Bleu clair */
+    text-decoration: none;
+}
 
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    nav ul li {
-        margin: 0 10px;
-    }
+a:hover {
+    text-decoration: underline;
 }
